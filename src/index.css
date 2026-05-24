@@ -1,0 +1,301 @@
+/* ============================================================
+   @font-face — Suisse Intl Mono
+   ============================================================ */
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntlMono-Regular.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntlMono-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntlMono-Bold.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntlMono-Bold.woff) format("woff");
+}
+
+/* ============================================================
+   @font-face — Suisse Intl
+   ============================================================ */
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Light.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Light.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Regular.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-SemiBold.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Bold.woff2) format("woff2"),
+    url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/SuisseIntl-Bold.woff) format("woff");
+}
+
+/* ============================================================
+   @font-face — apkarchivr21 (pixel)
+   ============================================================ */
+
+@font-face {
+  ascent-override: 92%;
+  descent-override: 22%;
+  font-display: swap;
+  font-family: apkarchivr21;
+  font-style: normal;
+  font-weight: 400;
+  line-gap-override: 0%;
+  src: url(https://21998649.fs1.hubspotusercontent-na1.net/hubfs/21998649/web-static/fonts/apkarchivr21_regular-webfont.woff) format("woff");
+}
+
+/* ============================================================
+   Tailwind directives
+   ============================================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CSS Custom Properties (Design Tokens)
+   ============================================================ */
+:root {
+  /* Colors */
+  --color-terminal: #0b0b0b;
+  --color-shell: #e7e6d9;
+  --color-ultraviolet: #6236f4;
+  --color-ultraviolet-hover: #815ef6;
+  --color-neutral-800: #262625;
+  --color-neutral-300: #b0afa6;
+
+  /* Typography */
+  --font-sans: "Suisse Intl", Helvetica, Arial, sans-serif;
+  --font-mono: "Suisse Intl Mono", "Courier New", monospace;
+  --font-pixel: apkarchivr21, monospace;
+
+  /* Shadows (RGB chromatic aberration) */
+  --box-shadow-rgb: 0 .99px 0 0 #ff0, .99px 0 0 0 #0ff, 1.98px .99px 0 0 #0f0, 0 -.99px 0 0 #00f, -.99px 0 0 0 #f0f, -1.98px 0 0 0 #f00;
+  --text-shadow-rgb: 0 .99px 0 #ff0, .99px 0 0 #0ff, 1.98px .99px 0 #0f0, 0 -.99px 0 #00f, -.99px 0 0 #f0f, -1.98px 0 0 #f00;
+
+  /* Transitions */
+  --transition-snappy: .1s cubic-bezier(.6, 0, .4, 1);
+  --transition-smooth: .4s cubic-bezier(.6, 0, .4, 1);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+  :root {
+    --box-shadow-rgb: 0 .5px 0 0 #ff0, .5px 0 0 0 #0ff, 1px .5px 0 0 #0f0, 0 -.5px 0 0 #00f, -.5px 0 0 0 #f0f, -1px 0 0 0 #f00;
+    --text-shadow-rgb: 0 .5px 0 #ff0, .5px 0 0 #0ff, 1px .5px 0 #0f0, 0 -.5px 0 #00f, -.5px 0 0 #f0f, -1px 0 0 #f00;
+  }
+}
+
+/* ============================================================
+   Base Reset
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-neutral-300);
+  background-color: var(--color-terminal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-terminal);
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 36px;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 0 !important;
+  background: var(--color-shell);
+  color: var(--color-terminal);
+  box-shadow: var(--box-shadow-rgb);
+  cursor: pointer;
+  transition: box-shadow var(--transition-snappy), background var(--transition-snappy);
+}
+
+.btn-primary:hover {
+  box-shadow: none;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 36px;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 0 !important;
+  background: var(--color-ultraviolet);
+  color: var(--color-shell);
+  box-shadow: none;
+  cursor: pointer;
+  transition: background var(--transition-snappy);
+}
+
+.btn-secondary:hover {
+  background: var(--color-ultraviolet-hover);
+}
+
+/* ============================================================
+   Accordion
+   ============================================================ */
+.accordion-item-content {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 0.4s cubic-bezier(.6, 0, .4, 1), visibility 0.4s;
+}
+
+.accordion-item-content.open {
+  max-height: 300px;
+  visibility: visible;
+}
+
+/* ============================================================
+   Hardware section
+   ============================================================ */
+.hardware-card {
+  flex: 0 0 18%;
+  transition: flex-basis 0.4s cubic-bezier(.6, 0, .4, 1);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  height: 610px;
+}
+
+.hardware-card.active {
+  flex: 0 0 46%;
+}
+
+.hardware-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.hardware-card.active .hardware-card-img {
+  filter: grayscale(0%);
+}
+
+.hardware-card-desc {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease 0.5s, transform 0.4s ease 0.5s;
+}
+
+.hardware-card.active .hardware-card-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hardware-card-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-shell);
+  transition: background 0.4s ease;
+}
+
+.hardware-card.active .hardware-card-indicator,
+.hardware-card:hover .hardware-card-indicator {
+  background: var(--color-ultraviolet);
+}
